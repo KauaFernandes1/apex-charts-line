@@ -6,7 +6,7 @@ const Chart = dynamic(() => import('react-apexcharts'), {
 })
 
 const OptionsChartLine = {
-  colors: ['#ffda2a'],
+  colors: ['#6347D2'],
   tooltip: {
     enabled: true,
     theme: 'dark'
@@ -14,11 +14,7 @@ const OptionsChartLine = {
   chart: {
     foreColor: 'dark'
   },
-  subtitle: {
-    text: 'inscritos no canal',
-    offsetY: 0,
-    offsetX: 8
-  },
+ 
   markers: {
     size: 4,
     strokeWidth: 2,
@@ -32,7 +28,10 @@ const OptionsChartLine = {
 const SeriesChartLine = [{
   name: 'primeiro',
   data: [10, 2, 20, 4, 3, 60, 7, 80, 9, 1, 100]
+ 
 }]
+
+
 
 export default function Home() {
   return (
